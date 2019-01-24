@@ -2,4 +2,17 @@
 layout: default
 title: xploitedd | homepage
 ---
-<h1>Hello World!</h1>
+<div class="center-container">
+  <div class="card text-center center-box">
+	<div class="card-body">
+		<img src="/assets/images/pphoto.jpg" class="rounded-circle profilep">
+		<div class="info-box">
+			<h1>Ricardo Margalhau</h1>
+			<p>Engenharia Informática e de Computadores @ ISEL</p>
+			{% for item in site.data.social %}
+			<a href="{{ item.url }}" class="btn btn-outline-secondary">{{ item.name }}</a>
+			{% endfor %}
+		</div>
+    </div>
+  </div>
+</div>
