@@ -4,7 +4,6 @@ $(document).ready(function() {
         contentType: "application/json"
     }).done(function(data) {
         data.forEach(repo => {
-            console.log(repo.name.length)
             let name = repo.name
             if (name.length > 20)
                 name = name.substring(0, 17) + "..."
