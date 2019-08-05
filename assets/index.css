@@ -40,7 +40,6 @@ body {
 .block .block-item {
     background: #111111;
     padding: 30px;
-    width: 60%;
     margin: 10px 0 10px 0;
     border-radius: 10px;
     -webkit-transition: all 0.1s ease-out; 
@@ -111,6 +110,8 @@ span.language.html {
 a.repo {
     text-decoration: none;
     color: #fff;
+    display: block;
+    width: 55%
 }
 
 a.repo:active {
@@ -180,5 +181,9 @@ a.repo:active {
 
     .block .block-item {
         width: 80%;
+    }
+
+    a.repo {
+        width: 98%;
     }
 } 
